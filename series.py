@@ -18,4 +18,10 @@ def lucas(n):
         luc_list.append(last_luc + sib_luc)
     return luc_list.pop()
 
-# def sum_series(a, b):
+def sum_series(n, a=0, b=1):
+    final_list = [a, b]
+    while len(final_list) <= n:
+        last_final = final_list[len(final_list) - 1]
+        sib_final = final_list[len(final_list) - 2]
+        final_list.append(last_final + sib_final)
+    return final_list.pop()
