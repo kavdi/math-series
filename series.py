@@ -3,13 +3,12 @@
 
 def fibonacci(n):
     fib_list = [0, 1]
-    while len(fib_list) < n:
+    while len(fib_list) <= n:
         last_fib = fib_list[len(fib_list) - 1]
         sib_fib = fib_list[len(fib_list) - 2]
         fib_list.append(last_fib + sib_fib)
-    print fib_list
+    return fib_list.pop()
 
-fibonacci(13)
 
 # def lucas(n):
 
