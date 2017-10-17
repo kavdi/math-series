@@ -10,7 +10,12 @@ def fibonacci(n):
     return fib_list.pop()
 
 
-# def lucas(n):
-
+def lucas(n):
+    luc_list = [2, 1]
+    while len(luc_list) <= n:
+        last_luc = luc_list[len(luc_list) - 1]
+        sib_luc = luc_list[len(luc_list) - 2]
+        luc_list.append(last_luc + sib_luc)
+    return luc_list.pop()
 
 # def sum_series(a, b):
