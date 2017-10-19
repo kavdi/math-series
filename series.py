@@ -3,6 +3,8 @@
 
 def fibonacci(n):
     """This function creates the fibonacci sequence and returns nth value."""
+    if n <= 0:
+        raise ValueError('This function only takes intergers greater than 0')
     fib_list = [0, 1]
     while len(fib_list) <= n:
         last_fib = fib_list[len(fib_list) - 1]

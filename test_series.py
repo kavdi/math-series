@@ -13,6 +13,14 @@ LUC_PARAMS = [(2, 3), (3, 4), (4, 7), (5, 11), (6, 18), (7, 29)]
 SUM_PARAMS = [(2, 0, 1, 1), (3, 0, 1, 2), (4, 0, 1, 3), (5, 0, 1, 5), (6, 0, 1, 8), (7, 0, 1, 13), (2, 2, 1, 3), (3, 2, 1, 4), (4, 2, 1, 7), (5, 2, 1, 11), (6, 2, 1, 18), (7, 2, 1, 29)]
 
 
+@pytest.mark.parametrize('n', [-2, -4, 0, -5, -10])
+def invalid_fibonacci_input():
+    """The number 0 is an invalid input to the fibonacci function."""
+    from series import fibonacci
+    with pytest.raises(ValueError):
+            fibonacci(0)
+
+
 @pytest.mark.parametrize('n, result', FIB_PARAMS)
 def test_fibonacci(n, result):
     """This function tests the fibonacci function from the series file."""
