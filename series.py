@@ -2,6 +2,7 @@
 
 
 def fibonacci(n):
+    """Return fibonacci sequence."""
     fib_list = [0, 1]
     while len(fib_list) <= n:
         last_fib = fib_list[len(fib_list) - 1]
@@ -11,6 +12,7 @@ def fibonacci(n):
 
 
 def lucas(n):
+    """Return lucas series."""
     luc_list = [2, 1]
     while len(luc_list) <= n:
         last_luc = luc_list[len(luc_list) - 1]
@@ -18,7 +20,9 @@ def lucas(n):
         luc_list.append(last_luc + sib_luc)
     return luc_list.pop()
 
+
 def sum_series(n, a=0, b=1):
+    """Return sum of fibonacci or lucas series."""
     final_list = [a, b]
     while len(final_list) <= n:
         last_final = final_list[len(final_list) - 1]
