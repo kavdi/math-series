@@ -35,13 +35,13 @@ def sum_series(n, a=0, b=1):
 
 
 if __name__ == '__main__':
-        print (__doc__)
-        print(" ")
-        print ("fibonacci(n):")
-        print (fibonacci.__doc__)
-        print(" ")
-        print ("lucas(n):")
-        print (lucas.__doc__)
-        print(" ")
-        print ("sum_series(n):")
-        print (sum_series.__doc__)
+    print (__doc__)
+    print(" ")
+    print ("fibonacci(4):", fibonacci(4))
+    print (fibonacci.__doc__)
+    print(" ")
+    print ("lucas(4):", lucas(4))
+    print (lucas.__doc__)
+    print(" ")
+    print ("sum_series(4):", sum_series(4))
+    print (sum_series.__doc__)
