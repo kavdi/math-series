@@ -1,6 +1,4 @@
 """This file test code for series.py."""
-
-
 import pytest
 
 
